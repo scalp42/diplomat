@@ -2,7 +2,7 @@ require 'base64'
 require 'faraday'
 
 module Diplomat
-  class Members < Diplomat::RestClient
+  class Agent::Members < Diplomat::RestClient
 
     # Get all members
     # @return [OpenStruct] all data associated with the service
@@ -13,7 +13,7 @@ module Diplomat
 
     # @note This is sugar, see (#get)
     def self.get
-      Diplomat::Members.new.get
+      Diplomat::Agent::Members.new.get
     end
 
   end
