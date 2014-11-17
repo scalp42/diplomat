@@ -1,8 +1,8 @@
 require 'base64'
 require 'faraday'
 
-module Diplomat
-  class Agent::Services < Diplomat::RestClient
+module Diplomat::Agent
+  class Services < Diplomat::RestClient
 
     # Get all services
     # @return [OpenStruct] all data associated with the service

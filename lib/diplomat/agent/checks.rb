@@ -1,8 +1,8 @@
 require 'base64'
 require 'faraday'
 
-module Diplomat
-  class Agent::Checks < Diplomat::RestClient
+module Diplomat::Agent
+  class Checks < Diplomat::RestClient
 
     attr_reader :checks
 
