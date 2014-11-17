@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'json'
 require 'base64'
 
-describe Diplomat::Members do
+describe Diplomat::Agent::Members do
 
   let(:faraday) { fake }
 
@@ -32,7 +32,7 @@ describe Diplomat::Members do
 
       faraday.stub(:get).and_return(OpenStruct.new({ body: json }))
 
-      members = Diplomat::Members.new(faraday)
+      members = Diplomat::Agent::Members.new(faraday)
 
       expect(members.get[0]["Name"]).to eq("foobar")
     end
