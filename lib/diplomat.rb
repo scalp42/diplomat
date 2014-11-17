@@ -30,8 +30,8 @@ module Diplomat
   # TODO: Make this configurable and overridable
   self.url = "http://localhost:8500"
 
-
-
-  require_libs "rest_client", "kv", "service", "members", "check", "health"
+  require_libs "rest_client", "kv", "service", "health",
+               "agent/checks", "agent/members", "agent/services"#,
+               #"check", "members"
 
 end
