@@ -1,6 +1,6 @@
 require './lib/diplomat/version'
 
-Gem::Specification.new 'diplomat', Diplomat::VERSION do |spec|
+Gem::Specification.new 'diplomat-scalp42', Diplomat::VERSION do |spec|
   spec.authors       = ['John Hamelink', 'Trevor Wood']
   spec.email         = ['john@johnhamelink.com', 'trevor.g.wood@gmail.com']
   spec.description   = spec.summary = 'Diplomat is a simple wrapper for Consul'
