@@ -11,5 +11,5 @@ Gem::Specification.new 'diplomatic_bag', Diplomat::VERSION do |spec|
   spec.bindir        = 'bin'
   spec.executables =   spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
 
-  spec.add_runtime_dependency 'diplomat', "=#{Diplomat::VERSION}"
+  spec.add_runtime_dependency 'diplomat-scalp42', "=#{Diplomat::VERSION}"
 end
